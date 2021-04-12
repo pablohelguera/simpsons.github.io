@@ -25,9 +25,11 @@ function App() {
     console.log(respuesta);
     console.log(resultado[0]);
 
-    //guardar el personaje en el state
-    setPersonaje(resultado[0]);
-    setCargando(false);
+    setTimeout(() => {
+      //guardar el personaje en el state
+      setPersonaje(resultado[0]);
+      setCargando(false);
+    }, 2500);
   };
 
   //operador ternario (condicion) ? (que pasa si es verdadero) : (que pasa si es falso)
@@ -54,9 +56,7 @@ function App() {
           Obtener Frase
         </Button>
       </article>
-      {
-        mostrarComponente
-      }
+      {mostrarComponente}
     </section>
   );
 }
