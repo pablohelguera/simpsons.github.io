@@ -48,6 +48,7 @@ function App() {
           src={process.env.PUBLIC_URL + "logoSimpsons.png"}
           alt="logo de los simpsons"
         />
+        <h1>Modificamos el codigo</h1>
         <Button
           variant="primary"
           className="my-5"
